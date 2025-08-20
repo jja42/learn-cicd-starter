@@ -39,4 +39,4 @@ jobs:
         run: go install github.com/securego/gosec/v2/cmd/gosec@latest
       
       - name: gosec security check
-        run: test -z $(gosec ./...)
+        run: gosec ./...
